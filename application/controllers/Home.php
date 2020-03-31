@@ -8,6 +8,7 @@ class Home extends CI_Controller
 			'title' => 'SchoolName: Homepage'
 		);
 		$this->load->view('templates/head',$data);
-		$this->load->view('homepage');
+		$this->load->view('homepage',$data);
+		$this->load->view('templates/tail',$data);
 	}
 }
